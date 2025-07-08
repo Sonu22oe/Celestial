@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { FaQuoteLeft, FaStar } from 'react-icons/fa';
 
 const testimonials = [
@@ -29,7 +30,9 @@ const Testimonial = () => {
   return (
     <section className="bg-slate-100 py-16 px-4">
       <div className="lg:text-center mb-10">
-        <h2 className="text-[4em] uppercase font-bold mb-4 text-slate-900 tracking-wide leading-tight Poppins">Hear <span className=" text-red-500">Our</span>  Clients</h2>
+        <h2 className="text-[4em] uppercase font-bold mb-4 text-slate-900 tracking-wide leading-tight Poppins">
+          Hear <span className=" text-red-500">Our</span> Clients
+        </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Read what our satisfied clients are saying about their experiences with our product.
         </p>
@@ -45,11 +48,15 @@ const Testimonial = () => {
             <p className="text-gray-800 mb-4">{testimonial.text}</p>
 
             <div className="flex items-center mb-3">
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-12 h-12 rounded-full mr-4"
-              />
+              <div className="w-12 h-12 relative rounded-full overflow-hidden mr-4">
+                <Image
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  fill
+                  className="object-cover rounded-full"
+                  sizes="48px"
+                />
+              </div>
               <div>
                 <div className="font-semibold text-gray-900">{testimonial.name}</div>
                 <div className="text-sm text-gray-500">{testimonial.title}</div>
