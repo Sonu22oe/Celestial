@@ -48,42 +48,65 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-3">Follow Us</h4>
           <div className="flex md:justify-start gap-4">
-            <a
+            <Link
               href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="text-gray-400 hover:text-white transition"
+              passHref
+              legacyBehavior
             >
-              <FontAwesomeIcon icon={faFacebookF} size="lg" />
-            </a>
-            <a
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="text-gray-400 hover:text-white transition"
+              >
+                <FontAwesomeIcon icon={faFacebookF} size="lg" />
+              </a>
+            </Link>
+
+            <Link
               href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-              className="text-gray-400 hover:text-white transition"
+              passHref
+              legacyBehavior
             >
-              <FontAwesomeIcon icon={faTwitter} size="lg" />
-            </a>
-            <a
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                className="text-gray-400 hover:text-white transition"
+              >
+                <FontAwesomeIcon icon={faTwitter} size="lg" />
+              </a>
+            </Link>
+
+            <Link
               href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="text-gray-400 hover:text-white transition"
+              passHref
+              legacyBehavior
             >
-              <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </a>
-            <a
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-gray-400 hover:text-white transition"
+              >
+                <FontAwesomeIcon icon={faInstagram} size="lg" />
+              </a>
+            </Link>
+
+            <Link
               href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="text-gray-400 hover:text-white transition"
+              passHref
+              legacyBehavior
             >
-              <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
-            </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-gray-400 hover:text-white transition"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
+              </a>
+            </Link>
           </div>
         </div>
       </div>
