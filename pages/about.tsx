@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
-import Link from "next/link"; // ✅ Import Link for internal navigation
+import Link from "next/link";
 import Stats from '../components/Stats';
 import Ourteam from '../components/Ourteam';
 
@@ -66,7 +66,63 @@ const AboutUs = () => {
                 </ul>
               </div>
 
-              {/* ✅ Updated with Link */}
+              {/* ✅ Proper Link */}
               <Link
-                href="/api/about"
-                className="bg-black text-white px-6 py-4 my-10 justify-left w-[100%] text-center block"
+                href="/about"
+                className="bg-black text-white px-6 py-4 my-10 w-full text-center block rounded hover:bg-gray-900 transition"
+              >
+                Read More
+              </Link>
+            </article>
+
+            {/* Block 2 */}
+            <article className="p-6 rounded-xl flex flex-col items-center">
+              <Image
+                src="/community.jpg"
+                alt="Creative innovation team"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg object-cover w-full aspect-video"
+              />
+              <div className="mt-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">
+                  Innovation Meets Execution
+                </h2>
+                <p className="text-md md:text-lg text-gray-700 leading-relaxed">
+                  Our team bridges creativity and technical excellence, delivering
+                  high-performance applications and memorable user experiences that
+                  drive growth.
+                </p>
+              </div>
+            </article>
+
+            {/* Block 3 */}
+            <article className="p-6 rounded-xl flex flex-col items-center">
+              <Image
+                src="/innovation.jpg"
+                alt="Scalable digital platform design"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg object-cover w-full aspect-video"
+              />
+              <div className="mt-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">
+                  Future-Ready Platforms
+                </h2>
+                <p className="text-md md:text-lg text-gray-700 leading-relaxed">
+                  We build scalable, secure, and adaptable platforms that meet the
+                  challenges of tomorrow’s digital landscape.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <Stats />
+          <Ourteam />
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default AboutUs;
