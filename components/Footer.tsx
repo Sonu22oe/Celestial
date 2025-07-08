@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
@@ -14,7 +15,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-start gap-10">
 
         {/* Left: Logo and Tagline */}
-        <div className=" text-[3em] md:text-left">
+        <div className="text-[3em] md:text-left">
           Celest3l
           <p className="text-sm text-gray-400 mt-2">
             Building digital experiences that connect, inspire, and grow businesses.
@@ -22,25 +23,31 @@ const Footer = () => {
         </div>
 
         {/* Center: Navigation */}
-        <div className="">
-          <h4 className="font-semibold mb-3 ">Quick Links</h4>
+        <div>
+          <h4 className="font-semibold mb-3">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/about" className="hover:text-gray-300 transition-colors">About Us</a>
+              <Link href="/about" className="hover:text-gray-300 transition-colors">
+                About Us
+              </Link>
             </li>
             <li>
-              <a href="/services" className="hover:text-gray-300 transition-colors">Services</a>
+              <Link href="/services" className="hover:text-gray-300 transition-colors">
+                Services
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-gray-300 transition-colors">Contact</a>
+              <Link href="/contact" className="hover:text-gray-300 transition-colors">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
 
         {/* Right: Social Icons */}
-        <div className="">
+        <div>
           <h4 className="font-semibold mb-3">Follow Us</h4>
-          <div className="flex  md:justify-start gap-4">
+          <div className="flex md:justify-start gap-4">
             <a
               href="https://facebook.com"
               target="_blank"
