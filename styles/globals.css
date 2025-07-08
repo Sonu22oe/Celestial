@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 1px #012c;
+  }
+  .text-stroke-white {
+    -webkit-text-stroke: 1px #fffc;
+  }
+  .text-stroke-2 {
+    -webkit-text-stroke-width: 2px;
+  }
+  .text-stroke-red {
+    -webkit-text-stroke: 1px red;
+  }
+}
+
+
+/*@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}*/
+/* === SANS-SERIF FONTS === */
+.Oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+.Inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.Raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.Poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.Montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.DMSans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.Nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.Ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* === SERIF FONTS === */
+.Lora {
+  font-family: 'Lora', serif;
+}
+
+.Playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.Crimson {
+  font-family: 'Crimson Text', serif;
+}
+
+.Merriweather {
+  font-family: 'Merriweather', serif;
+}
+
+.LibreBaskerville {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.Cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.RobotoSerif {
+  font-family: 'Roboto Serif', serif;
+}
+
+/* === MONOSPACE FONTS === */
+.Firacode {
+  font-family: 'Fira Code', monospace;
+}
+
+.Jetbrains {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.Sourcecode {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.Inconsolata {
+  font-family: 'Inconsolata', monospace;
+}
+
+.SpaceMono {
+  font-family: 'Space Mono', monospace;
+}
+
+.Cousine {
+  font-family: 'Cousine', monospace;
+}
+@font-face {
+  font-family: 'Bodoni';
+  src: url('/fonts/Bodoni 72.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
